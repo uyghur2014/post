@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="mezmun">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+       <meta name="description" content="tormahiri software development blog">
+    <meta name="tormahiri" content="i'm software engineer">
+
+    <title>تورماھىرى</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/blog.css" rel="stylesheet">
+<script src="js/angular.js"></script>
+<script src="js/mezmun.js"></script>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body  ng-controller="myapp" ng-init="getItems()">
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+           <a class="blog-nav-item active" href="index.html">باش بەت</a>
+          <a class="blog-nav-item" href="http://bilig.cc/user/11" target="_blank">دەرسلىرىم</a>
+          <a class="blog-nav-item" href="http://tormahiri.github.io/-/about" target="_blank">ئەمگەكلىرىم</a>
+         
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title" ><a style="text-decoration:none;" href="index.html" target="_blank">تورماھىرى</a></h1>
+        <p class="lead blog-description">بىرلا  پىروگىرامما تېلىنى بىلگەن كىشى ئۆزىنى كەسىپ ئەھلى دىمەسلىكى كىرەك</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+ <center><h2 class="loading"style="margin-top:50px">مەزمۇنلار يۈكلىنىۋاتىدۇ...</h2></center>
+          <div class="blog-post" >
+            <h2 class="blog-post-title">{{items.title }}</h2>
+            <p class="blog-post-meta">يوللانغان ۋاقىت: {{items.createdAt}}</a></p>
+    <p class="desc">
+
+
+           
+            </p>
+          </div><!-- /.blog-post -->
+
+         
+
+          
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+             <h4>مەن ھەققىدە</h4>
+            <p>ئككىنىڭ بالىسى ،ئىككىنىڭ ئاكىسى،كەسىپ دائىرەسى يۇمشاق دېتال ئاچقۇچى</p>
+          </div>
+          
+          <div class="sidebar-module">
+            <h4> دوستلار بىلوگى</h4>
+            <ol class="list-unstyled">
+            <li><a href="http://www.ugineyli.com" target="_blank">ئۈگىنەيلى بىلوگى</a></li>
+              <li><a href="http://www.elierkin.com/blog/" target="_blank">سارۋان بىلوگى</a></li>
+              <li><a href="http://mouse.arzu3.com" target="_blank">چاشقان خاتېرىسى</a></li>
+               <li><a href="http://teshna.me/" target="_blank">تەشنا تېخنىكا كۇلۇبى</a></li>
+            </ol>
+          </div>
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+      <p>ttormahiri@hotmail.com.</p>
+      <p>
+        <a href="#">ئۈستىگە قايتىش</a>
+      </p>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
